@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JS打字机效果</title>
+    <meta name="description" content="">
+    <meta name="author" content="Administrator">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <style type="text/css">
+        #main {
+            width: 80%;
+            height: 750px;
+            margin: auto;
+            padding: 10px;
+            background: #cfe1ca;
+            border: 10px outset #f5b796;
+            line-height: 30px;
+            color: #4710c7;
+            font-size: 18px;
+        }
+        
+        p {
+            text-indent: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+        var typeWriter = {
+            msg: function(msg) {
+                return msg;
+            },
+            len: function() {
+                return this.msg.length;
+            },
+            seq: 0,
+            speed: 150, //打字时间(ms)
+            type: function() {
+                var _this = this;
+                document.getElementById("main").innerHTML = _this.msg.substring(0, _this.seq);
+                if (_this.seq == _this.len()) {
+                    _this.seq = 0;
+                    clearTimeout(t);
+                } else {
+                    _this.seq++;
+                    var t = setTimeout(function() {
+                        _this.type()
+                    }, this.speed);
+                }
+            }
+        }
+        window.onload = function() {
+            var msg = "大家好，第一次和大家见面是以javascript简易打字机的形式，本人男，大三2022年毕业，准备从事前端这块的工作，因为之前踩过很多坑，所以在此想把自己学习中遇到的非常重要的总结出来，帮助他人更是完善自己，本账号将会分享一些前端干货和面试笔记，欢迎感兴趣的道友一起交流！";
+
+            function getMsg() {
+                return msg;
+            }
+            typeWriter.msg = getMsg(msg);
+            typeWriter.type();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main"> </div>
+</body>
+
+</html>

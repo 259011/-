@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: width 5s linear 0s;
+            margin-bottom: 20px;
+        }
+        
+        .box1:hover {
+            width: 800px;
+        }
+        
+        .box2 p {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: left 1s linear 0s;
+            left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .box2:hover p {
+            left: 1000px;
+        }
+        
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: background-color 1s linear 0s;
+            margin-bottom: 20px;
+        }
+        
+        .box3:hover {
+            background-color: green;
+        }
+        
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: transform 0.3s linear 0s;
+            margin-bottom: 20px;
+        }
+        
+        .box4:hover {
+            transform: scale(1.2) rotate(360deg);
+        }
+        
+        .box5 {
+            perspective: 300px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        
+        .box5 p {
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            transition: transform 1s linear 0s;
+        }
+        
+        .box5:hover p {
+            transform: rotateX(360deg) rotateY(180deg) rotateZ(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        <p></p>
+    </div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5">
+        <p></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 列表的嵌套
+    <ul>
+        <li>
+            <h3>河南省</h3>
+            <ul>
+                <li>平顶山</li>
+                <li>三门峡</li>
+                <li>郑州</li>
+            </ul>
+        </li>
+        <li>
+            <h3>湖北省</h3>
+            <ul>
+                <li>武汉</li>
+                <li>黄石</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <h1>考试成绩排名</h1>
+    <ol type="a" start="3" reversed>
+        <li>小慕</li>
+        <li>小明</li>
+        <li>小红</li>
+        <li>小强</li>
+    </ol> -->
+
+    <body>
+        <form action="" method="post">
+            <!-- 颜色选择控件 -->
+            <p>
+                请选择你喜欢的颜色：
+                <input type="color">
+            </p>
+            <!-- 时间、日期选择控件 -->
+            <p>
+                请输入时间、日期：
+                <input type="date">
+                <input type="time">
+            </p>
+            <!-- 电子邮件输入控件 -->
+            <p>
+                请输入收件人的邮箱：
+                <input type="email">
+            </p>
+            <!-- 数字输入控件 -->
+            <p>
+                请输入你的幸运数字：
+                <input type="number">
+            </p>
+            <!-- 文件选择控件 -->
+            <p>
+                请选择文件：
+                <input type="file">
+            </p>
+            <!-- 搜索框、拖拽条 -->
+            <p>
+                搜索框、拖拽条：
+                <input type="search">
+                <input type="range">
+            </p>
+            <!-- 网址输入控件 -->
+            <p>
+                请输入网址：
+                <input type="url">
+            </p>
+            <p>
+                <input type="submit" value="提交表单">
+            </p>
+        </form>
+
+        <p>
+            省份：
+            <input type="text" list="province-list">
+            <datalist id="province-list">
+        <option value="北京市">
+        <option value="天津市">
+        <option value="上海市">
+        <option value="重庆市">
+        <option value="山西省">
+        <option value="山东省">
+        <option value="广东省">
+        <option value="广西省">
+        <option value="湖南省">
+        <option value="湖北省">
+        <option value="河北省">
+        <option value="河南省">
+        <option value="台湾省">
+    </datalist>
+        </p>
+
+
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+            </tr>
+            <tr>
+                <td>刘德华</td>
+                <td>男</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>张学友</td>
+                <td>男</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <td>郭富城</td>
+                <td>男</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>尊龙</td>
+                <td>男</td>
+                <td>59</td>
+            </tr>
+        </table>
+
+
+        <table align="center" border="1" cellpadding="20" cellspacing="0">
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+            <tr>
+                <td>刘德华</td>
+                <td>男</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>张学友</td>
+                <td>男</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <td>郭富城</td>
+                <td>男</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>尊龙</td>
+                <td>男</td>
+                <td>59</td>
+            </tr>
+        </table>
+
+
+        <table border="1" cellpadding="40" cellspacing="0">
+            <tr>
+                <td colspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td colspan="3">E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+        </table>
+
+
+        <table border="1" width="700" cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="2">第一季度</th>
+                    <th colspan="2">第二季度</th>
+                    <th colspan="2">第三季度</th>
+                    <th colspan="2">第四季度</th>
+                </tr>
+                <tr>
+
+                    <th>国内</th>
+                    <th>国外</th>
+                    <th>国内</th>
+                    <th>国外</th>
+                    <th>国内</th>
+                    <th>国外</th>
+                    <th>国内</th>
+                    <th>国外</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>手机</th>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <th>农产品</th>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <th>水产品</th>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>汇总</th>
+                    <td>369</td>
+                    <td>369</td>
+                    <td>369</td>
+                    <td>369</td>
+                    <td>369</td>
+                    <td>369</td>
+                    <td>369</td>
+                    <td>369</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+
+</html>
